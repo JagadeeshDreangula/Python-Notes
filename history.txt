@@ -1,0 +1,35 @@
+
+##############################
+** python was developed by "Guido Van Rossam" in 1989 while working at National research institute at Netherlands
+**But officially Python was made available to public in 1991.
+**The official DOB for python is :FEB 20th 1991
+C-->C was developed by 'Dennis Ritchie'
+C++ -->  was Developed by Bjarne Stroustrup
+java -->  was Developed by James Gosling
+ ###################################################
+python is a general purpose high level programming language
+1)what is high level programing language?
+2)what is Low level programming language
+python is recommended as first programming language for beginers.
+####################################################
+E.g: To print 'hellow world'
+
+Java:
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+.......................................
+C:
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    printf("Hello world");
+
+    return 0;
+}
+.....................................................
+Python:
+print('"Hello world"') 

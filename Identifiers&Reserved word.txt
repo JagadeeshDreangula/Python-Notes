@@ -1,0 +1,32 @@
+                                                    Identifiers
+                                                    .............
+
+* A name in python program is called identifier
+*It can be class name or function name or module name or variable name
+
+Rules to define Indentifiers:
+1)Identifiers shout not start with digit(only start with alphabets or underscore)
+2)for define identifier we use only
+ a)alphabet symbols(lower case or upper case)
+ b)digits
+ c)underscore symbol(_)
+    *amount=4000
+    *amount$=4000
+3) Indetifiers are case sensitive(bcz python is case sensitive lamguage)
+4)we cannot use reserved words as identifiers(35 key words)
+
+                                            Reserved Words
+                                            >>>>>>>>>>>>>>>>
+In python some words are reserved to represent some meaning of functionality.Such type of words are called "Reserved words"
+There are 35 reserved words available in python(this  number will be change in future ,not constnt)
+*All  Reserved words in python contain only alphabet symols
+*only the following 3 reserved words starts with capital letter
+  1)True
+  2)False
+  3)None
+
+  '''['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break',
+ 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for',
+ 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass',
+ 'raise', 'return', 'try', 'while', 'with', 'yield']'''
+
