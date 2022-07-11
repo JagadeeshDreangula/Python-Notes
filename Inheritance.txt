@@ -1,0 +1,49 @@
+
+                                                     Python Inheritance
+                                              ................................
+Inheritance is the capability of one class to derive or inherit the properties from another class.
+The benefits of inheritance are:
+
+It represents real-world relationships well.
+It provides reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.
+It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
+Create a Parent Class:   Any class can be a parent class, so the syntax is the same as creating any other class
+
+class Person(fname,lname):
+    firstname = fname
+    lastname = lname
+
+  def parent(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("Jagadeesh", "Derangula")
+x.printname()
+
+Create a Child Class:
+            To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class:
+
+  Example: Create a class named Student, which will inherit the properties and methods from the Person class:
+
+class Child(Person):
+  def ankitha(self,name):
+    print(name, self.lastname)
+** Now the Child class has the same properties and methods as the Person class.
+
+Example:Use the Child  class to create an object, and then execute the printname method:
+
+x = Child( )
+x.ankitha("Ankitha")
+####################################################################################################################################
+Different forms of Inheritance:
+1. Single inheritance:
+            When a child class inherits from only one parent class, it is called single inheritance. We saw an example above.
+2. Multiple inheritance:
+            When a child class inherits from multiple parent classes, it is called multiple inheritance.
+3. Multilevel inheritance:
+            When we have a child and grandchild relationship.
+4. Hierarchical inheritance:
+            More than one derived classes are created from a single base.
+5. Hybrid inheritance:
+            This form combines more than one form of inheritance. Basically, it is a blend of more than one type of inheritance.

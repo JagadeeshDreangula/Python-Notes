@@ -1,0 +1,123 @@
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+
+Creating a Function:
+In Python a function is defined using the def keyword
+
+def my_function():
+  print("Hello from a function")
+
+Calling a Function:To call a function, use the function name followed by parenthesis:
+
+def my_function(): #define
+  print("Hello from a function") #body
+
+my_function() #calling
+###############################################################################################################
+Parameter:A parameter is the variable  listed inside the parentheses in the function definition
+Arguments:- An arguments is the value that is sent to the function when it is called.
+
+def my_function(name):#parameter
+  print('hellow'+name)
+
+my_function("python")
+my_function("Jagadeesh")#Arguments
+my_function("Mrs")
+###################################################################################################
+Number of Arguments:-
+            By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.
+
+def my_function(fname, lname):
+  print(fname + " " + lname)
+my_function("python", "easy")
+##############################################################################################
+Arbitrary Arguments, ((*args)):-
+    If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("cute", "pretty", "cool")
+#############################################################################
+Keyword Arguments:-
+                    You can also send arguments with the key = value syntax.
+                   This way the order of the arguments does not matter.
+
+def my_function(a, b, c):
+  print("The youngest child is " + child3)
+my_function(a=1, b=2, c=3)
+
+#############################################################################################################
+Arbitrary Keyword Arguments, ((**kwargs)):-
+     If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
+
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
+my_function(fname = "Tobias", lname = "Refsnes")
+
+############################################################################################################
+Default Parameter Value:- The following example shows how to use a default parameter value.
+                          If we call the function without argument, it uses the default value.
+
+def my_function(country = "Norway"):
+  print("I am from " , country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+
+#######################################################################################################################
+Return Values:- To let a function return a value, use the return statement:
+
+def my_function(x):
+  return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+##########################################################################################################
+Python Lambda:-A lambda function is a small anonymous function.
+               A lambda function can take any number of arguments, but can only have one expression.
+
+Syntax:
+
+lambda parameters : expression
+
+Example:
+Add 10 to argument a, and return the result:
+x = lambda a : a + 10
+print(x(5))
+
+Lambda functions can take any number of arguments:
+Example:
+Multiply argument a with argument b and return the result.
+
+x = lambda a, b : a * b
+print(x(5, 6))
+
+
+Summarize argument a, b, and c and return the result:
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+
+Why Use Lambda Functions?
+The power of lambda is better shown when you use them as an anonymous function inside another function.
+
+Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:
+
+def myfunc(n):
+  return lambda a : a * n
+
+
+Use that function definition to make a function that always doubles the number you send in:
+
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+
+print(mydoubler(11))

@@ -1,0 +1,163 @@
+                                            CONDITION STATEMENTS
+                                          ............................
+1)if, 2)if-else, 3)if-elif-else
+    1. if :- An "if statement" is written by using the 'if' keyword.
+             use it to execute a block of code, if a specified condition is true.
+
+          Syntax:-
+                 if condition:
+                    statement-1
+                    statement-2
+                    statement-3
+#############################################################################################################################
+Indentation:
+Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.
+a = 33
+b = 200                                                   b = 200
+if b > a:                                                 if b > a:
+  print("b is greater than a")                            print("b is greater than a") #it will show error
+ ################################################################################################################################
+    2. if-else :- The if-else statement is used to execute both the true part and the false part of a given condition.
+                  If the condition is true, the if block code is executed and if the condition is false, the else block code is executed.
+
+          Syntax:-
+                if condition:
+                   statement-1    #if statement is True in print statement-1 will be output
+                else:
+                   statement-2    #incase if statement is False automatically statement-2 will be output
+######################################################################################################################################
+    3. if-elif-else :- The if-else statement is used to execute both the true part and the false part of a given condition.
+                       If the condition is true, the if block code is executed and if the condition is false, the else block code is executed.
+
+          Syntax:-
+                if test expression:
+                    Body of if
+
+                elif test expression:
+                    Body of elif
+
+                else:
+                    Body of else
+
+#########################################################################################################333
+Short Hand If:
+                If you have only one statement to execute, you can put it on the same line as the if statement.
+                e.g: if a > b: print("a is greater than b")
+###################################################################################################
+Short Hand If ... Else:
+                        If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:
+##################################################################################################################
+"Nested if" condition:-
+                     You can have "if" statements inside "if" statements, this is called "nested if" statements.
+
+          Syntax:-
+               if (condition1):
+                 # Executes when condition1 is true
+
+                  if (condition2):
+                    # Executes when condition2 is true
+
+                 # if Block is end here
+
+               # if Block is end here
+
+
+################################################################################################################
+                                                Iterative Statements
+                                           ................................
+1)for loop,2)while loop
+
+         1. for loop :-if we want to execute some action for every element present in some sequence then we should go for "for"loop.
+
+         Syntax:-
+                for x in sequence:
+                    body
+                #where sequence can be string or any collection.
+                #Body will be executed for every element in the sequence.
+########################################################################################################################################
+         ** range() :-
+                To loop through a set of code a specified number of times, we can use the range() function.
+                           Ex:-   for x in range(10):
+                                     print(x)      ##Note that range(6) is not the values of 0 to 6, but the values 0 to 5.
+
+
+                 The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3):
+
+                           Ex:-   for x in range(1,20):
+                                     print(x)  # if you are not mentioned increment value it will automatically consider increment is 1.
+
+                           Ex:-   for x in range(1,20,2):
+                                     print(x)
+
+                           Ex:-   for x in range(10):
+                                     print("Hello")   # To Print Hello 10 Times
+
+                           Ex:-   for x in range(10,1,-1)
+                                     print(x)     #To display numbers from 10 to 1 in descending order
+#############################################################################################################################
+
+2. WHILE LOOP:-  if we want to execute a group of statemnets iteratively until some conditions false,then we should go for "while" loop.
+
+                Syntax:-
+                         while condition
+                            body
+
+                Ex:- #To print numbers from 1 to 10 by using while loop
+
+                      x = 1
+                      while x<=10:
+                      print(x)
+                      x=x+1
+
+                Ex:- #To display the sum of first n numbers
+
+                      n = int(input("Enter number"))
+                      sum=0
+                      i=1
+                      while i<=n:
+                        sum=sum+1
+                        i=i+1
+                      print("The sum of first",n,"numbers is:",sum)
+
+            **Infinite Loops:-
+                      i=0;
+                      while True:
+                        i=i+1;
+                        print("Hello",i)
+############################################################################################################################
+
+         ** Break statement:- With the break statement we can stop the loop before it has looped through all the items.
+                      Ex:-   fruits = "Apple, Banana, Mango"fruits = "Apple, Banana, Mango"
+                       for x in fruits:
+                          print(x)
+                          if x == "Banana":
+                             break
+                       ##Here print is at before break
+
+###################################################################################################################################
+         ** Continue statement:- With the continue statement we can stop the current iteration of the loop, and continue with the next.
+                Ex:-   fruits = "Apple, Banana, Mango"
+                       for x in fruits:
+                          if x == "Banana":
+                             continue
+                          print(x)
+#########################################################################################################################
+3. PASS Statement :-
+                   pass is a keyword in python.
+                   In our programming syntactically if block required which won't do anything then we can define that empty block with pass keyword.
+#######################################################################################################################################
+
+NOTE:-
+    HOW TO EXIT FROM THE LOOP               :-  by using Break statement
+    HOW TO SKIP SOME ITERATIONS INSIDE LOOP :-  by using continue statement
+
+
+
+
+
+
+
+
+
+
+

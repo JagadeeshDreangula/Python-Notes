@@ -1,0 +1,9 @@
+                                                                Polymorphism
+                                                            .........................
+
+What is Polymorphism?
+* Polymorphism is taken from the Greek words Poly (many) and morphism (forms).
+* It means that the same function name can be used for different types. This makes programming more intuitive and easier.
+* In Python, we have different ways to define polymorphism. So let’s move ahead and see how polymorphism works in Python.
+
+

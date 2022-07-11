@@ -1,0 +1,160 @@
+                                         OPERATORS In Python
+                                      ...........................
+ operator is a symbol that perform certain operations
+ Operators are used to perform operations on variables and values.
+ Python divides the operators in the following groups:
+
+1)Arithmetic operators
+2)Assignment operators
+3)Comparison operators
+4)Logical operators
+5)Identity operators
+6)Membership operators(explained in strng toppic)
+['''checking membership'''
+# n='python'
+# print('t'in n)#in
+# print('t'not in n)#not in]
+7)Bitwise operators
+###########################################################################################
+1)Arithmetic operators:Arithmetic operators are used with numeric values to perform common mathematical operations
+......................................................
+Operator	Name	    Example
+......................................................
++	    Addition	        x + y
+-	    Subtraction	        x - y
+*	    Multiplication	    x * y
+/	    Division	        x / y
+%	    Modulus	            x % y
+**	   Exponent (power)	    x ** y
+//	    Floor division	    x // y
+........................................................
+##########################################################################
+2)Assignment operators:Assignment operators are used to assign values to variables
+........................................................
+Operator	    Example	        Same As
+........................................................
+=	            x = 5	        x = 5
++=	            x += 3	        x = x + 3
+-=	            x -= 3	        x = x - 3
+*=	            x *= 3	        x = x * 3
+/=	            x /= 3	        x = x / 3
+%=	            x %= 3	        x = x % 3
+//=	            x //= 3	        x = x // 3
+**=	            x **= 3	        x = x ** 3
+&=	            x &= 3	        x = x & 3
+|=	            x |= 3	        x = x | 3
+^=	            x ^= 3	        x = x ^ 3
+>>=	            x >>= 3	        x = x >> 3
+<<=	            x <<= 3	        x = x << 3
+........................................................
+##########################################################
+3)Comparison Operators:Comparison operators are used to compare two values
+.........................................................................
+Operator	        Name	        Example
+.........................................................................
+==	            Equal	                 x == y
+!=	            Not equal	             x != y
+>	            Greater than	         x > y
+<	            Less than	             x < y
+>=	           Greater than or equal to  x >= y
+<=	           Less than or equal to	 x <= y
+.........................................................................
+#########################################################################
+4)Logical Operators:Logical operators are used to combine conditional statements
+.......................................................................................
+Operator	Description	                                Example
+........................................................................................
+and 	Returns True if both statements are true	                x < 5 and  x < 10
+or	    Returns True if one of the statements is true	            x < 5 or x < 4
+not	    Reverse the result, returns False if the result is true	    not(x < 5 and x < 10)
+.........................................................................................
+#######################################################################################
+5)Identity Operators:Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location
+....................................................................................................
+Operator	    Description	                                            Example
+..............................................................................................
+is 	        Returns True if both variables are the same object	        x is y
+is not	    Returns True if both variables are not the same object	    x is not y
+.....................................................................................................
+##################################################################################################
+6)Bitwise Operators:Bitwise operators are used to compare (binary) numbers
+......................................................................................................
+Operator	    Name	            Description
+.......................................................................................................
+& 	AND	                    Sets each bit to 1 if both bits are 1
+|	OR	                    Sets each bit to 1 if one of two bits is 1
+ ^	XOR	                    Sets each bit to 1 if only one of two bits is 1
+~ 	NOT	                    Inverts all the bits
+<<	Zero fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off
+>>	Signed right shift	    Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off
+
+                                Math module
+                                >>>>>>>>>>>>
+ A module is collection of fuctions ,variables and  classes
+ Math is a module that contains several functions to perform mathematical operations
+ if we want to use any module in python, first we have to import that module
+ import math
+ *sqrt
+ *pi
+......................................................................................................................
+Method	                                Description
+................................................................................................................
+math.acos()	                        Returns the arc cosine of a number
+math.acosh()	                    Returns the inverse hyperbolic cosine of a number
+math.asin()	                        Returns the arc sine of a number
+math.asinh()	                    Returns the inverse hyperbolic sine of a number
+math.atan()	                        Returns the arc tangent of a number in radians
+math.atan2()	                    Returns the arc tangent of y/x in radians
+math.atanh()	                    Returns the inverse hyperbolic tangent of a number
+math.ceil()	                        Rounds a number up to the nearest integer
+math.comb()	                        Returns the number of ways to choose k items from n items without repetition and order
+math.copysign()	                    Returns a float consisting of the value of the first parameter and the sign of the second parameter
+math.cos()	                        Returns the cosine of a number
+math.cosh()                         Returns the hyperbolic cosine of a number
+math.degrees()	                    Converts an angle from radians to degrees
+math.dist()	                        Returns the Euclidean distance between two points (p and q), where p and q are the coordinates of that point
+math.erf()                          Returns the error function of a number
+math.erfc()	                        Returns the complementary error function of a number
+math.exp()	                        Returns E raised to the power of x
+math.expm1()	                    Returns Ex - 1
+math.fabs()	                        Returns the absolute value of a number
+math.factorial()	                Returns the factorial of a number
+math.floor()	                    Rounds a number down to the nearest integer
+math.fmod()	                        Returns the remainder of x/y
+math.frexp()	                    Returns the mantissa and the exponent, of a specified number
+math.fsum()	                        Returns the sum of all items in any iterable (tuples, arrays, lists, etc.)
+math.gamma()	                    Returns the gamma function at x
+math.gcd()	                        Returns the greatest common divisor of two integers
+math.hypot()	                    Returns the Euclidean norm
+math.isclose()	                    Checks whether two values are close to each other, or not
+math.isfinite()	                    Checks whether a number is finite or not
+math.isinf()	                    Checks whether a number is infinite or not
+math.isnan()	                    Checks whether a value is NaN (not a number) or not
+math.isqrt()	                    Rounds a square root number downwards to the nearest integer
+math.ldexp()	                    Returns the inverse of math.frexp() which is x * (2**i) of the given numbers x and i
+math.lgamma()	                    Returns the log gamma value of x
+math.log()	                        Returns the natural logarithm of a number, or the logarithm of number to base
+math.log10()	                    Returns the base-10 logarithm of x
+math.log1p()	                    Returns the natural logarithm of 1+x
+math.log2()	                        Returns the base-2 logarithm of x
+math.perm()	                        Returns the number of ways to choose k items from n items with order and without repetition
+math.pow()	                        Returns the value of x to the power of y
+math.prod()	                        Returns the product of all the elements in an iterable
+math.radians()	                    Converts a degree value into radians
+math.remainder()	                Returns the closest value that can make numerator completely divisible by the denominator
+math.sin()	                        Returns the sine of a number
+math.sinh()	                        Returns the hyperbolic sine of a number
+math.sqrt()	                        Returns the square root of a number
+math.tan()	                        Returns the tangent of a number
+math.tanh()	                        Returns the hyperbolic tangent of a number
+math.trunc()	                    Returns the truncated integer parts of a number
+###############################################################
+Math Constants
+...........................................................
+Constant	Description
+.........................................................
+math.e	    Returns Euler's number (2.7182...)
+math.inf	Returns a floating-point positive infinity
+math.nan	Returns a floating-point NaN (Not a Number) value
+math.pi	    Returns PI (3.1415...)
+math.tau	Returns tau (6.2831...)

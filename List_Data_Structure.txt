@@ -1,0 +1,246 @@
+                                                            List
+                                                      ....................
+          1.Lists are used to store multiple items in a single entity where insertion order preserved and duplicates are allowed.
+          2.In list the elements will be placed within square brackets and with comma seperator.
+
+                      # list=[10,'jagadeesh',50]
+          3.Duplicate objects are allowed.
+          4.Insertion order preserved.
+          5.List is dynamic because based on our requirement we can increase the size and decrease the size.
+
+######################################################################################################################
+There are four collection data types in the Python programming language:
+
+List:-    List is a collection which is ordered and changeable. Allows duplicate members.[]
+Tuple:-   Tuple is a collection which is ordered and unchangeable. Allows duplicate members.()
+Set:-     Set is a collection which is unordered, unchangeable, and unindexed. No duplicate members.{}
+Dic:-     Dictionary is a collection which is ordered** and changeable. No duplicate members.{'key':value}
+
+#######################################################################################################################
+** Split() function:- With this function we can split the given input.
+
+       EX:- x="Learning Python is very very easy!!"
+            l=x.split()
+            print(l)
+####################################################################################################
+
+** Accessing the elements of List:- We can access elements of the list either by using index or by using slice operator(:)
+
+  1. By using index:-
+
+
+                  list=[10,20,30,40,50]       #Remember that the first item has index 0.
+                  print(list[0])
+                  print(list[2])
+
+  2. By using slice operator:-  The slice() function returns a slice object. A slice object is used to specify how to slice a sequence. You can specify where to start the slicing, and where to end.
+
+                  n=[1,2,3,4,5,6,7,8,9]
+                  print(n[2:7:2])            #[start,stop,increment]
+                  print(n[0:5:1])            #Remember that the first item has index 0.
+
+
+IMPORTANT FUNCTIONS OF LIST:
+
+  1.len(): returns the number of elements present in the list
+
+           Ex:-   n=[10,20,30,05,64]
+                  print(len(n))
+
+  2.count(): it returns the number of occurrences of specified item in the list.
+
+           Ex:-   n=[1,2,2,2,2,3,3,4,5]
+                  print(n.count(1))
+                  print(n.count(2))
+                  print(n.count(3))
+                  print(n.count(4))
+
+  3. index function(): returns the index of first occurence of the specified item.
+
+           Ex:-   n=[1,2,2,2,3,3]
+                  print(n.index(1))
+                  print(n.index(2))
+                  print(n.index(3))      Note:- if the specified element is not present in the list then we will get value error.
+
+
+MANUPULATING ELEMENTS OF LIST:
+
+ 1.append() function:  we can use append function to add item at the end of the list.
+
+           Ex:-   l=[]
+                  l.append(20)
+                  l.append('Python class')
+                  l.append('list data structure')
+                  print(l)
+
+ 2. insert() function:  To insert item at specified index position.
+
+           Ex:-   n=[1,2,3,5,8,9]
+                  n.insert(1,454)
+                  print(n)
+
+ 3. extend() function:  To add all items of one list to another list
+
+           Ex:-   order1=["chicken","mutton","fish"]
+                  order2=["Rc","KFC","AFC"]
+                  order1.extend(order2)
+                  print(order1)
+
+ 4. remove() function:  To remove specified item from the list.If the item present multiple times in the list then only first occurence will be removed.
+
+           Ex:-   a=[10,20,50,10,30]
+                  a.remove(10)
+                  print(a)
+
+ 5. pop() function:   It removes and returns the last element of the list.
+
+           Ex:-   n=[10,20,30,40]
+                  print(n.pop())
+
+
+ DIFFERENCE BETWEEN remove and pop:
+
+ remove()                                                                 pop():
+ 1.use to remove special element from list.                               1. use to remove last element from the list.
+ 2.it can't return any value.                                             2. it returned removed element.
+ 3.if the element is not present in the list we will get error.          3. if the list is empty we get error.
+
+NOTE:-
+
+ append(),insert(),extend() ==>  for increasing the size/growable nature.
+ remove(),pop()             ==>  for decreasing the size/shrinking nature.
+
+
+
+ORDERING ELEMENTS OF LIST:
+
+1.reverse():  we can use to reverse of elements in list.
+
+     Ex:-     n=[11,12,15,18]
+              n.reverse()
+              print(n)
+
+2.sort() :  for numbers ==>  default natural sorting order is Ascrnding order.
+            for Strings ==>  default natural sorting order is Alphabetical order.
+
+
+            Note:  if you are using sort() the list must contain homogeneous elements otherwise we get error.
+
+              n=[10,0,5,2,6,8]
+              n.sort()
+              print(n)        Ans will be #(0,2,5,6,8,10)
+
+
+
+              n=[10,20,5,'A','B']
+              n.sort()
+              print(n)       ###### we get error
+              n=[1,3,4,2,1,3,9]
+              print(n.sort(reverse=True))
+
+
+ALIASING AND CLONING OF LIST OBJECTS: The process of giving another reference variable to the existing list is  called "Aliasing".
+
+           Ex:-    x=[10,20,30,40,50]
+                   y=x
+                   y[1]=777
+                   print(x)           # [1,777,30,40,50]
+
+ 1. By using slice operator:
+           Ex:-    x=[10,20,30,40,50]
+                   y=x[:]
+                   y[2]=789
+                   print(x)          #[10,20,30,40,50]
+                   print(y)          #[10,20,789,40,50]
+
+ 2. By copy() function:
+           Ex:-   x=[10,20,30,40,50]
+                  y=x.copy()
+                  y[1]=585
+                  print(x)
+                  print(y)
+
+
+
+           OPERATOR  ==> it means Aliacing
+           copy() function ==> it means cloning
+
+
+USING MATHEMATICAL OPERATORS:- We can use + and * operators for list operators.
+
+   1. Concatenation operator (+) : we can use + operator to concatenation 2 lists into a single list.
+
+          Ex:- a=[10,20,30]
+               b=[40,50,60]
+               c=a+b
+               print(c)       #[10,20,30,40,50,60]
+                              #To use + both arguments should be list objects, otherwise we get error.
+                              {c=a+40   ==> Type error}
+                              {c=a+[40] ==> valid}
+
+
+   2.  Repetition operator (*) : we can use * to repeat elements of list specified number of times.
+
+         Ex:-  a=[55,85,96,36]
+               b=a*2
+               print(b)        # [55,85,96,36,55,85,96,36]
+
+
+
+
+   3.clear() function:   The clear() method empties the list.
+                         The list still remains, but it has no content.
+
+               Ex:-      thislist = ["apple", "banana", "cherry"]
+                         thislist.clear()
+                         print(thislist)
+
+
+   4. list comprehension :  List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+               Example:
+
+                        Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
+
+                        Without list comprehension you will have to write a for statement with a conditional test inside:
+
+
+              Ex:- fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+                   newlist = []
+
+                   for x in fruits:
+                     if "a" in x:
+                       newlist.append(x)
+                   print(newlist)
+
+
+   Quick Review :-
+
+                 append()     ==>	 Adds an element at the end of the list
+                 clear()      ==>	 Removes all the elements from the list
+                 copy()	      ==>    Returns a copy of the list
+                 count()	  ==>    Returns the number of elements with the specified value
+                 extend()	  ==>    Add the elements of a list (or any iterable), to the end of the current list
+                 index()	  ==>    Returns the index of the first element with the specified value
+                 insert()     ==>	 Adds an element at the specified position
+                 pop()	      ==>    Removes the element at the specified position
+                 remove()	  ==>    Removes the item with the specified value
+                 reverse()	  ==>    Reverses the order of the list
+                 sort()	      ==>    Sorts the list
+
+
+
+                                                  <   THANK YOU  >
+
+
+
+
+
+
+
+
+
+
+
+
+
